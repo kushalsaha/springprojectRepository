@@ -20,7 +20,9 @@ http://localhost:8080/rest/restaurent/#id
 
 Save a new Restaurent in DB - POST
 http://localhost:8080/rest/restaurent/addnew
-Input data format - {"resturentName":"<Name>","address":"<address>","contactInfo":1234567890}
+
+Input data format - 
+{"resturentName":"name","address":"address","contactInfo":1234567890}
 
 
 Delete a Restaurent from table based on id - Delete
