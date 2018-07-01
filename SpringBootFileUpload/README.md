@@ -9,4 +9,4 @@ To test upload functionality:
 To test exception Rest response:
 
 1. Build and run the application using SpringBootFileUploadApplication.java
-2. Hot the url: http://localhost:8080/test
+2. Hit the url: http://localhost:8080/test
