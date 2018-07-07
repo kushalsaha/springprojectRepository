@@ -3,8 +3,8 @@ About:
 ==========
 This project is used to manipulate Table data in MysqlDatabse - food<br>
 Table name - restaurent, restaurent_menu, menu_items <br>
-Restaurent has a Menu - One-To-One mapping <br>
-Menu has Set<Item> - One-To-Many mapping <br>
+<b>restaurent</b> has a <b>Menu</b> - One-To-One mapping <br>
+<b>Menu</b> has <b>Set'Item'</b> - One-To-Many mapping <br>
 
 Execution:
 ==============
@@ -43,7 +43,7 @@ http://localhost:8080/rest/restaurent/{restaurentId}/menu
 Add a new item to menu of Restaurent - POST
 http://localhost:8080/rest/restaurent/{restaurentId}/menu/item <br>
 Input data format - 
-{"itemName":"<name>","price":<double-rate>,"quantity":"FULL"}
+{"itemName":"name","price": #double-rate,"quantity":"FULL"}
 
 
 See all menu items for a Restaurent - GET
