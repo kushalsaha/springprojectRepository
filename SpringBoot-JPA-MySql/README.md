@@ -1,8 +1,10 @@
 
 About:
 ==========
-This project is used to manipulate Table data in MysqlDatabse - food,
-Table name - Restaurent
+This project is used to manipulate Table data in MysqlDatabse - food<br>
+Table name - restaurent, restaurent_menu, menu_items <br>
+Restaurent has a Menu - One-To-One mapping <br>
+Menu has Set<Item> - One-To-Many mapping <br>
 
 Execution:
 ==============
@@ -19,8 +21,7 @@ http://localhost:8080/rest/restaurent/#id
 
 
 Save a new Restaurent in DB - POST
-http://localhost:8080/rest/restaurent/addnew
-
+http://localhost:8080/rest/restaurent/addnew <br>
 Input data format - 
 {"resturentName":"name","address":"address","contactInfo":1234567890}
 
@@ -30,8 +31,7 @@ http://localhost:8080/rest/restaurent/delete/#id
 
 ****************
 Add Menu details to Restaurent - POST
-http://localhost:8080/rest/restaurent/{restaurentId}/menu
-
+http://localhost:8080/rest/restaurent/{restaurentId}/menu <br>
 Input data format - 
 {"menuName":"combo-Menu"}
 
@@ -41,8 +41,7 @@ http://localhost:8080/rest/restaurent/{restaurentId}/menu
 
 *******************
 Add a new item to menu of Restaurent - POST
-http://localhost:8080/rest/restaurent/{restaurentId}/menu/item
-
+http://localhost:8080/rest/restaurent/{restaurentId}/menu/item <br>
 Input data format - 
 {"itemName":"<name>","price":<double-rate>,"quantity":"FULL"}
 
