@@ -1,7 +1,7 @@
 
 About:
 ==========
-This project is used to manipulate Table data in Mysql Databse - food
+This project is used to manipulate Table data in MysqlDatabse - food,
 Table name - Restaurent
 
 Execution:
@@ -25,5 +25,27 @@ Input data format -
 {"resturentName":"name","address":"address","contactInfo":1234567890}
 
 
-Delete a Restaurent from table based on id - Delete
+Delete a Restaurent from table based on id - DELETE
 http://localhost:8080/rest/restaurent/delete/#id
+
+****************
+Add Menu details to Restaurent - POST
+http://localhost:8080/rest/restaurent/{restaurentId}/menu
+
+Input data format - 
+{"menuName":"combo-Menu"}
+
+
+See Menu details for a particular Restaurent - GET
+http://localhost:8080/rest/restaurent/{restaurentId}/menu
+
+*******************
+Add a new item to menu of Restaurent - POST
+http://localhost:8080/rest/restaurent/{restaurentId}/menu/item
+
+Input data format - 
+{"itemName":"<name>","price":<double-rate>,"quantity":"FULL"}
+
+
+See all menu items for a Restaurent - GET
+http://localhost:8080/rest/restaurent/{restaurentId}/menu-items
